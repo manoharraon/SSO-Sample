@@ -1,0 +1,8 @@
+.embededContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
