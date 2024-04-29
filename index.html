@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SignIn&SignUp</title>
+  <title>NCEP</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
@@ -57,22 +57,7 @@
               });
             });
           </script>
-          <!-- <script>
-            // Get the elements by their ID
-            var popupLink = document.getElementById("popup-link");
-            var popupWindow = document.getElementById("popup-window");
-            var closeButton = document.getElementById("close-button");
-            // Show the pop-up window when the link is clicked
-            popupLink.addEventListener("click", function (event) {
-              event.preventDefault();
-              popupWindow.style.display = "block";
-            });
-            // Hide the pop-up window when the close button is clicked
-            closeButton.addEventListener("click", function () {
-            popupWindow.style.display = "none";
 
-            });
-          </script> -->
 
 
         </form>
@@ -84,6 +69,22 @@
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Username" />
           </div>
+        
+          <div class="input-field">
+            <i class="fas fa-hospital"></i>
+            <select class="dropdown-menu" id="hospitalDropdown" onchange="updateSelectedText()">
+              <option value="" disabled selected>Please select hospital</option>
+              <option value="option1">Cavan General Hospital</option>
+              <option value="option2">Mayo University Hospital</option>
+              <option value="option3">Rotunda Hospital</option>
+              <option value="option3">University Hospital Galway</option>
+            </select>
+            <span class="selected-text">Please select hospital</span>
+          </div>
+
+
+
+
           <div class="input-field">
             <i class="fas fa-envelope"></i>
             <input type="email" placeholder="Email" />
